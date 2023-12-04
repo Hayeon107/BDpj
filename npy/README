@@ -1,0 +1,15 @@
+4차년도, 5차년도, 5차년도 2차 데이터의 mfcc를 추출한 특징 데이터
+- total_features.npy  : 전체 mfcc
+- total_featues_padded.npy : 전체 mfcc를 패딩한 것
+  - 패딩시 3개의 데이터 특성의 길이중에 가장 큰 걸로 맞춘다
+  - max값은 4차시 4412, 5차시 2505, 5_2차시 5897
+- total_labels.npy : 원핫 인코딩한 전체 데이터의 라벨데이터
+- data_4_features_np.npy : 4차시 데이터의 mfcc (패딩X)
+  - 패딩시 pad_sequences(total_features,maxlen=4412, dtype='float32')
+- data_5_features_np.npy : 5차시 데이터의 mfcc (패딩X)
+  - 패딩시 pad_sequences(total_features,maxlen=2505, dtype='float32')
+- data_5_2_features_np.npy : 5차시 2차 데이터의 mfcc (패딩X)
+  - 패딩시 pad_sequences(total_features,maxlen=5897, dtype='float32')
+- df_4_labes.npy : 원핫인코딩한 4차시 데이터의 라벨
+- df_5_labels.npy : 원핫인코딩한 5차시 데이터의 라벨
+- df_5_2_labels.npy : 원핫인코딩한 5_2차 데이터의 라벨
