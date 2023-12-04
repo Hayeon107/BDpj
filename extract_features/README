@@ -1,3 +1,4 @@
+
 4차년도, 5차년도, 5차년도 2차 데이터의 mfcc를 추출한 특징 데이터
 - total_features.npy  : 전체 mfcc
 - total_featues_padded.npy : 전체 mfcc를 패딩한 것
